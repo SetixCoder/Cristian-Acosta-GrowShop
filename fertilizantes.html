@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <title>GrowShop</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
@@ -42,20 +43,36 @@
       </div>
     </header>
     <main class="secproductos">
-      <h2>Fertilizantes</h2>
+      <h2 class="wow fadeInDown">Fertilizantes</h2>
       <section class="secproductos__etapas">
         <h2>Estapa vegetativa</h2>
         <div>
-          <img src="Imagenes/fertilizantes/Eden Vege.jpg" alt="" />
-          <img src="Imagenes/fertilizantes/ORO NEGRO 100ML.jpg" alt="" />
-          <img src="Imagenes/fertilizantes/top veg.jpg" alt="" />
+          <img
+            class="wow fadeInLeftBig"
+            src="Imagenes/fertilizantes/Eden Vege.jpg"
+            alt=""
+          />
+          <img
+            class="wow fadeInTopLeft"
+            src="Imagenes/fertilizantes/ORO NEGRO 100ML.jpg"
+            alt=""
+          />
+          <img
+            class="wow fadeInRightBig"
+            src="Imagenes/fertilizantes/top veg.jpg"
+            alt=""
+          />
         </div>
       </section>
       <section class="secproductos__etapas">
         <h2>Estapa de Floracion</h2>
         <div>
           <img src="Imagenes/fertilizantes/Eden Flora.jpg" alt="" />
-          <img src="Imagenes/fertilizantes/Flora Booster 100ml.jpg" alt="" />
+          <img
+            class="wow flip"
+            src="Imagenes/fertilizantes/Flora Booster 100ml.jpg"
+            alt=""
+          />
           <img src="Imagenes/fertilizantes/top bloom.jpg" alt="" />
         </div>
       </section>
@@ -84,5 +101,9 @@
         </div>
       </section>
     </footer>
+    <script src="./js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <title>GrowShop</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
@@ -41,7 +42,7 @@
         </nav>
       </div>
     </header>
-    <section class="banner">
+    <section class="banner wow fadeInLeft">
       <a href="">
         <img src="Imagenes/Inicio/Banner 1.jpg" alt="" />
       </a>
@@ -49,7 +50,7 @@
     <main id="prodmain">
       <section class="container">
         <div class="intro1">
-          <h2>Lo mas vendido</h2>
+          <h2 class="wow bounceInUp">Lo mas vendido</h2>
           <h3>
             En esta seccion podras encontrar lo mas elegido por nuestros
             clientes con un descuento promocional durante 24 hrs, luego los
@@ -58,17 +59,14 @@
         </div>
         <div class="productos">
           <img
-            class="producto__item"
+            class="producto__item wow fadeInLeftBig"
             src="Imagenes/Inicio/beauveria bassiana neem.jpg"
             alt=""
           />
+          <img class="producto__item wow fadeIn " data-wow-duration="4s""
+          src="Imagenes/Inicio/Sustrato VAMP 10L.jpg" alt="" />
           <img
-            class="producto__item"
-            src="Imagenes/Inicio/Sustrato VAMP 10L.jpg"
-            alt=""
-          />
-          <img
-            class="producto__item"
+            class="producto__item wow fadeInRightBig"
             src="Imagenes/Inicio/Vamp gallina veg.jpg"
             alt=""
           />
@@ -99,5 +97,9 @@
         </div>
       </section>
     </footer>
+    <script src="./js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
